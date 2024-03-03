@@ -97,6 +97,12 @@ print(repository_uri)
 ```
 Then run this `python3 ecr.py`
 
+- Setup password and credentials for ECR
+
+```
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 221650130255.dkr.ecr.us-east-1.amazonaws.com
+```
+
 - Push the Docker image to ECR using the push commands on the console:
 
 ```
